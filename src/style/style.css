@@ -364,9 +364,10 @@ nav ul li{
 }
 
 .collection-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -380,7 +381,7 @@ nav ul li{
   gap: 16px;
   padding: 12px;
   margin-right: 12px;
-  background-color: var(--neutral-100);
+  background-color: var(--neutral-50);
   border-radius: 20px;
 }
 
@@ -416,7 +417,6 @@ nav ul li{
 
 .collection-details .collection-price {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   gap: 4px;
   width: 48px;
@@ -437,6 +437,7 @@ nav ul li{
   align-items: center;
   justify-content: center;
   align-self: stretch;
+  font-size: var(--text-base);
   padding: 10px 26px;
   gap: 10px;
   border: 1px solid var(--neutral-800);
@@ -463,9 +464,10 @@ nav ul li{
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -679,11 +681,7 @@ footer .logo {
   }
 
   .collection-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 36px;
-    /*margin: 0 auto;*/
+    padding: 24px;
   }
 
   .product-filter {
@@ -708,10 +706,7 @@ footer .logo {
   }
 
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 36px;
+    gap: 36px;
     margin: 0 auto;
   }
 
@@ -797,6 +792,7 @@ footer .logo {
 
   .hero-text p {
     width: 600px;
+    font-size: var(--text-lg);
   }
 
   #stellar {
@@ -845,11 +841,17 @@ footer .logo {
     padding: 32px;
   }
 
+  #buttons button {
+    font-size: var(--text-base);
+  }
+
   .collection-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 36px;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .collection-card button {
+    font-size: var(--text-base);
   }
 
   .create-sell {
@@ -857,10 +859,7 @@ footer .logo {
   }
 
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 36px;
+    flex-wrap: nowrap;
   }
 
   .subscription {
@@ -922,7 +921,10 @@ footer .logo {
   }
 
   .collection-container {
-    margin: 0 42px;
+    align-content: center;
+    padding: 32px;
+    gap: 36px;
+    margin-inline: 16px;
   }
 
   #collection-section h2 {
@@ -941,17 +943,18 @@ footer .logo {
   }
 
   .card-container {
-    gap: 48px;
+    gap: 64px;
+    padding: auto;
     margin: 0 auto;
   }
 
   /* SUBSCRIPTION CTA */
 
   .subscription {
-    width: 1300px;
+    width: 1320px;
     position: relative;
     top: 10px;
-    left: -120px;
+    left: -100px;
   }
   
   .subscription h2 {
