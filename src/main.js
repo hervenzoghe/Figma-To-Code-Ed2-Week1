@@ -1,6 +1,6 @@
 /* IMPORT DATA FILE FOR COLLECTIONS AND CREATE/SELL SECTIONS */
 
-import { data } from "../js/data.js"
+import { data } from "./js/data.js"
 
 // RESPONSIVE NAVBAR
 
