@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit-NFT</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="brand-name"><a href="#"><img src="/public/icons/logo.svg" alt="logo"></a></div>
+        <div class="toggle-button">
+            <img src="/public/icons/menu.png" alt="open-menu">
+        </div>
+        <div class="mobile-menu-panel">
+            <div class="menu-top">
+                <div class="brand-name"><a href="#"><img src="/public/icons/logo.svg" alt="logo"></a></div>
+                <img src="/public/icons/cancel.png" class="close-icon" alt="close icon" width="28" height="28">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Top sales</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Our blog</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" id="sign-up">Sign up</a>
+                <a href="#" id="connect-btn">Connect Wallet</a>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <nav class="desktop-menu-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Top sales</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Our blog</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" id="sign-up">Sign up</a>
+                    <a href="#" id="connect-btn">Connect Wallet</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>See the NFT new world</h1>
+                <div class="description">
+                    <p>Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, di</p>
+                    <div class="discover-btn">
+                        <p>Discover Vow</p>
+                        <a href="#"><img src="/public/icons/arrow-right.png" alt="Go to Discover"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="ellipse"><img src="/public/images/machine.png" alt="machine art"></div>
+                <div id="stellar"><img src="/public/images/stellar.png" alt="stellar"></div>
+                <div class="ellipse" id="gorilla"><img src="/public/images/gorilla.png" alt="gorilla art"></div>
+            </div>
+        </div>
+        <div id="collection-section">
+            <h2>Our Collections</h2>
+            <div class="product-filter">
+                <div id="buttons">
+                    <button class="button-value" onclick="filterCollection('all')">All categories</button>
+                    <button class="button-value" onclick="filterCollection('Art')">Art</button>
+                    <button class="button-value" onclick="filterCollection('Celebrities')">Celebrities</button>
+                    <button class="button-value" onclick="filterCollection('Gaming')">Gaming</button>
+                    <button class="button-value" onclick="filterCollection('Sport')">Sport</button>
+                </div>
+                <a href="#" class="view-more">View more</a>
+            </div>
+            <div class="collection-container"></div>
+        </div>
+        <div class="create-sell">
+            <h2>Create and Sell Now</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="subscription">
+            <h2>Build your NFT profile</h2>
+            <p class="subtitle">Join almost 10k NFT profiles on Digit !</p>
+            <button><a href="#" target="_blank" rel="noopener noreferrer">Sign up now</a></button>
+        </div>
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="/public/icons/logo.svg" alt="logo">
+        </div>
+        <div class="submenu">
+            <div class="submenu-title">
+                <h3>Create Explore & Collect Digital  NFTs</h3>
+            </div>
+            <ul class="submenu-list">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
